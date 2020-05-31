@@ -1,25 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Homepage from './pages/homepage/homepage.componet'
 
-import { Route} from 'react-router-dom'
+import { Route, Switch} from 'react-router-dom'
+import ShopComponent from './pages/shop/shop.component';
 
 
-function Hat() {
-  return (
-    <div>
-      Hat
-    </div>
-  )
-}
 
 function App() {
   return (
     <div className="App">
 
+      <Switch>
+
         <Route exact={true} path='/' component={Homepage}/>
-        <Route exact={false} path='/shop/hats' component={Hat}/>
+        <Route exact={true} path='/shop' component={ShopComponent}/>
+
+      </Switch>
 
       
     </div>
