@@ -35,7 +35,7 @@ const CheckoutItem = ({ cartItem, clearItem, addItem, removeItem }) => {
 };
 
 const mapDispatchToProps = dispatch => ({
-  clearItem: item => dispatch(removeItem(item)),
+  clearItem: item => dispatch(clearItem(item)),
   addItem: item => dispatch(addItem(item)),
   removeItem: item => dispatch(removeItem(item))
 });
